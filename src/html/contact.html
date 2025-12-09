@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body class="page page--contact">
+    <header class="header">
+        <div class="header__brand">
+            <a class="header__link" href="/">
+                <img class="header__logo header__logo--light" src="/assets/icons/logo.avif" alt="Logo Lumimix" />
+            </a>
+        </div>
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top" aria-hidden="true"></span>
+            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom" aria-hidden="true"></span>
+        </button>
+        <nav class="header__nav nav" id="mainNav" hidden>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="/src/html/festival.html">Le Festival</a></li>
+                <li class="nav__item"><a class="nav__link" href="/src/html/programme.html">Programme</a></li>
+                <li class="nav__item"><a class="nav__link" href="/src/html/artistes.html">Artistes</a></li>
+                <li class="nav__item"><a class="nav__link" href="/src/html/scenes.html">Scènes</a></li>
+                <li class="nav__item"><a class="nav__link" href="/src/html/infos_pratiques.html">Infos pratiques</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="/src/html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page__main contact">
+        <section class="contact__hero">
+            <div class="contact__intro">
+                <p class="contact__eyebrow">Lumimix 2026</p>
+                <h1 class="contact__title">Contactez l'équipe</h1>
+                <p class="contact__text">Besoin d'informations sur la billetterie, la presse, les partenariats ou
+                    l'accessibilité ? Notre équipe
+                    répond en semaine de 9h à 18h.</p>
+            </div>
+            <img class="contact__hero-img" src="/assets/img/backgroundnuages.avif"
+                alt="Nuages lumineux au-dessus du festival">
+        </section>
+
+        <section class="contact__section contact__section--details">
+            <h2 class="contact__section-title">Coordonnées</h2>
+            <dl class="contact__list">
+                <div class="contact__row">
+                    <dt class="contact__label">Email général</dt>
+                    <dd class="contact__value"><a
+                            href="mailto:contact@lumimix-festival.fr">contact@lumimix-festival.fr</a></dd>
+                </div>
+                <div class="contact__row">
+                    <dt class="contact__label">Presse</dt>
+                    <dd class="contact__value"><a
+                            href="mailto:presse@lumimix-festival.fr">presse@lumimix-festival.fr</a></dd>
+                </div>
+                <div class="contact__row">
+                    <dt class="contact__label">Partenariats</dt>
+                    <dd class="contact__value"><a
+                            href="mailto:partenariats@lumimix-festival.fr">partenariats@lumimix-festival.fr</a></dd>
+                </div>
+                <div class="contact__row">
+                    <dt class="contact__label">Accessibilité</dt>
+                    <dd class="contact__value"><a
+                            href="mailto:accessibilite@lumimix-festival.fr">accessibilite@lumimix-festival.fr</a></dd>
+                </div>
+                <div class="contact__row">
+                    <dt class="contact__label">Téléphone</dt>
+                    <dd class="contact__value">+33 (0)3 84 XX XX XX</dd>
+                </div>
+            </dl>
+            <p class="contact__hours">Du lundi au vendredi, 9h - 18h</p>
+            <p class="contact__address">Festival Lumimix · 12 rue de la Musique · 90000 Belfort · France</p>
+        </section>
+
+        <section class="contact__section contact__section--form">
+            <h2 class="contact__section-title">Formulaire de contact</h2>
+            <form class="contact-form" action="#" method="post">
+                <label class="contact-form__field">
+                    <span class="contact-form__label">Nom</span>
+                    <input class="contact-form__input" type="text" name="lastname" required>
+                </label>
+                <label class="contact-form__field">
+                    <span class="contact-form__label">Prénom</span>
+                    <input class="contact-form__input" type="text" name="firstname" required>
+                </label>
+                <label class="contact-form__field">
+                    <span class="contact-form__label">Email</span>
+                    <input class="contact-form__input" type="email" name="email" required>
+                </label>
+                <label class="contact-form__field">
+                    <span class="contact-form__label">Sujet</span>
+                    <input class="contact-form__input" type="text" name="subject" required>
+                </label>
+                <label class="contact-form__field contact-form__field--full">
+                    <span class="contact-form__label">Message</span>
+                    <textarea class="contact-form__textarea" name="message" rows="5" required></textarea>
+                </label>
+                <button class="contact-form__submit btn" type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section class="contact__section contact__section--social">
+            <h2 class="contact__section-title">Réseaux sociaux</h2>
+            <p class="contact__text">Suivez-nous pour l'actualité du festival, les annonces d'artistes et les coulisses
+                de Lumimix.</p>
+            <ul class="contact__social-list">
+                <li class="contact__social-item">Instagram : @lumimix_festival</li>
+                <li class="contact__social-item">Facebook : Lumimix Festival</li>
+                <li class="contact__social-item">YouTube : Lumimix Festival</li>
+                <li class="contact__social-item">#Lumimix2026</li>
+            </ul>
+        </section>
+
+        <section class="contact__section contact__section--help">
+            <h2 class="contact__section-title">Besoin d'aide ?</h2>
+            <p class="contact__text">Consulte notre FAQ dans la section Infos Pratiques pour trouver rapidement des
+                réponses aux questions fréquentes.</p>
+            <a class="btn" href="/src/html/infos_pratiques.html">Voir la FAQ</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__brand">
+            <img class="footer__logo" src="/assets/icons/logo.avif" alt="Logo Lumimix" loading="lazy">
+            <p class="footer__baseline">LUMIMIX FESTIVAL 7-8-9 août 2026 · Malsaucy, Belfort</p>
+        </div>
+        <div class="footer__grid">
+            <section class="footer__section footer__section--nav">
+                <h2 class="footer__title">Navigation</h2>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="/src/html/festival.html">Le
+                            Festival</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link"
+                            href="/src/html/programme.html">Programme</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="/src/html/artistes.html">Artistes</a>
+                    </li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="/src/html/scenes.html">Scènes</a>
+                    </li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="/src/html/infos_pratiques.html">Infos
+                            pratiques</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="/src/html/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__section footer__section--contact">
+                <h2 class="footer__title">Contact</h2>
+                <p class="footer__contact-item">contact@lumimix-festival.fr</p>
+                <p class="footer__contact-item">XX.XX.XX.XX.XX</p>
+            </section>
+            <section class="footer__section footer__section--social">
+                <h2 class="footer__title">Réseaux sociaux</h2>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://instagram.com">
+                            <img class="footer__social-icon" src="/assets/icons/instagram 1.svg" alt="Icône Instagram"
+                                loading="lazy">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://facebook.com">
+                            <img class="footer__social-icon" src="/assets/icons/facebook 1.svg" alt="Icône Facebook"
+                                loading="lazy">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="https://youtube.com">
+                            <img class="footer__social-icon" src="/assets/icons/youtube 1.svg" alt="Icône YouTube"
+                                loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__section footer__section--legal">
+                <h2 class="footer__title">Légal</h2>
+                <ul class="footer__legal-list">
+                    <li class="footer__legal-item">Mentions légales</li>
+                    <li class="footer__legal-item">CGV</li>
+                    <li class="footer__legal-item">Politique de confidentialité</li>
+                </ul>
+            </section>
+        </div>
+        <div class="footer__partners">
+            <img class="footer__partners-img" src="/assets/img/parenaires1.avif"
+                alt="Logos des partenaires Pass Culture, Thomann, Redbull, L'Est Républicain et Pioneer DJ"
+                loading="lazy">
+        </div>
+    </footer>
+</body>
+
+</html>

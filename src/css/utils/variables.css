@@ -1,0 +1,21 @@
+/* coulers */
+:root {
+    ----beige-background--: #f3eccf;
+    ----bleu-degrade--: #2d1b69;
+    ----magenta-degrade--: #c54b8c;
+    ----orange-degrade--: #ff9a56;
+    ----rose-degrade--: #ff6b9d;
+    ----violet-degrade--: #6b4fbb;
+
+    /* typographies */
+    --headers-1-2-et-3: Bebas Neue;
+    --sans: Inter;
+
+    /* typographie size */
+    ----text-s--: 14px;
+    ----text-m--: 20px;
+    ----xl-header--: 20px;
+    ----2xl-header--: 25px;
+    ----3xl-header--: 35px;
+    ----err-404--: 150px;
+}
