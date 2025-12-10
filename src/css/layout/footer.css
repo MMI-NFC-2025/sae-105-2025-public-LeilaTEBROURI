@@ -1,0 +1,67 @@
+.footer {
+    background: linear-gradient(180deg, var(----orange-degrade--), var(----magenta-degrade--), var(----violet-degrade--));
+    height: 846px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--space-4xl) var(--space-2xl);
+    color: white;
+    font-size: var(----text-s--);
+}
+
+/* Nuage en haut du footer */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-image: url('/assets/icons/nuage-top.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 0;
+}
+
+/* Nuage en bas du footer */
+.footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    background-image: url('/assets/icons/nuage-bottom.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 0;
+}
+
+/* S'assurer que le contenu du footer est au-dessus des nuages */
+.footer__content,
+.footer__partners,
+.footer__section {
+    position: relative;
+    z-index: 1;
+    margin-left: 15px;
+}
+
+.footer__content {
+    margin-left: 15px;
+}
+
+/* Tous les liens et textes du footer en blanc */
+.footer__link,
+.footer__legal-link,
+.footer__social-link,
+.footer__title,
+.footer p,
+.footer a {
+    color: white;
+    font-size: var(----text-s--);
+}

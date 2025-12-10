@@ -12,6 +12,12 @@
     transition: background-color 0.3s ease;
 }
 
+.header__brand,
+.header__logo {
+    position: relative;
+    z-index: 1001;
+}
+
 /* Transparent header only on homepage */
 body:not(.page) .header {
     background-color: transparent;
