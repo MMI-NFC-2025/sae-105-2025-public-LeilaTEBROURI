@@ -30,7 +30,7 @@ body:not(.page) .header.is-visible {
 /* Menu button stays visible and functional always */
 .menu-btn {
     position: fixed;
-    top: 10px;
+    top: 2px;
     right: 20px;
     z-index: 1001;
     opacity: 1;
