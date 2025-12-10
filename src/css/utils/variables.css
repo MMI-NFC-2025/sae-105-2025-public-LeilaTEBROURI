@@ -2,10 +2,12 @@
 :root {
     ----beige-background--: #f3eccf;
     ----bleu-degrade--: #2d1b69;
-    ----magenta-degrade--: #c54b8c;
-    ----orange-degrade--: #ff9a56;
-    ----rose-degrade--: #ff6b9d;
     ----violet-degrade--: #6b4fbb;
+    ----magenta-degrade--: #c54b8c;
+    ----rose-degrade--: #ff6b9d;
+    ----orange-degrade--: #ff9a56;
+
+
 
     /* typographies */
     --headers-1-2-et-3: Bebas Neue;
