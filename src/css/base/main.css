@@ -12,6 +12,17 @@ body {
     background-color: white;
     background-image: url('/assets/img/backgroundnuages.avif');
     color: black;
+    padding-top: 120px;
+    /* Hauteur du header fixe + marge */
+}
+
+/* Pas de padding sur la page d'accueil car elle a le hero */
+body:not(.page) {
+    padding-top: 0;
+}
+
+body.u-noscroll {
+    overflow: hidden;
 }
 
 img[src*="/assets/img/"] {

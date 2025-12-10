@@ -1,10 +1,9 @@
 /* coulers */
 :root {
     ----beige-background--: #f3eccf;
-    ----bleu-degrade--: #2d1b69;
+    ----beige-background--: #f3eccf;
     ----violet-degrade--: #6b4fbb;
     ----magenta-degrade--: #c54b8c;
-    ----rose-degrade--: #ff6b9d;
     ----orange-degrade--: #ff9a56;
     --light: oklch(1 0 0 / 1);
     --dark: oklch(0 0 0 / 1);
