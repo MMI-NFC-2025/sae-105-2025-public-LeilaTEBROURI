@@ -7,42 +7,38 @@
     width: 44px;
     height: 44px;
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 6px;
     cursor: pointer;
+    position: relative;
+    z-index: 1001;
 }
 
 .menu-btn__bar {
     position: relative;
     display: block;
-    width: 28px;
+    width: 32px;
     height: 3px;
-    background: #111;
+    background: var(--dark);
     border-radius: 2px;
     transition: transform 200ms ease, opacity 200ms ease;
 }
 
-.menu-btn__bar--top {
-    transform: translateY(-5px);
-}
-
-.menu-btn__bar--bottom {
-    transform: translateY(5px);
-}
-
 .menu-btn[aria-expanded="true"] .menu-btn__bar--top {
-    transform: translateY(0) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar--bottom {
-    transform: translateY(0) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 /* Overlay nav (class .nav on your <nav id="mainNav">) */
 .nav {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.85);
+    background: var(----beige-background--);
     display: grid;
     place-items: center;
     z-index: 999;
@@ -62,10 +58,11 @@
 }
 
 .nav__link {
-    font-family: var(--sans, Inter);
-    font-size: 18px;
-    color: white;
+    font-family: var(--headers-1-2-et-3);
+    font-size: 35px;
+    color: var(--dark);
     text-decoration: none;
+
 }
 
 .nav__link:hover {
