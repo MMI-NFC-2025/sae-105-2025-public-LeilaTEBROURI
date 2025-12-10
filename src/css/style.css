@@ -10,5 +10,6 @@
 
 /* Layout */
 @import "layout/header.css";
+@import "layout/menu.css";
 @import "layout/footer.css";
 @import "layout/section.css";

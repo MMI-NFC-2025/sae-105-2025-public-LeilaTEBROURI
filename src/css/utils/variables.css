@@ -6,6 +6,11 @@
     ----magenta-degrade--: #c54b8c;
     ----rose-degrade--: #ff6b9d;
     ----orange-degrade--: #ff9a56;
+    --light: oklch(1 0 0 / 1);
+    --dark: oklch(0 0 0 / 1);
+
+    /* Gradient for headings (exactly three colors) */
+    --heading-gradient: linear-gradient(90deg, #6b4fbb, #c54b8c, #ff9a56);
 
 
 
@@ -20,4 +25,26 @@
     ----2xl-header--: 25px;
     ----3xl-header--: 35px;
     ----err-404--: 150px;
+
+    /* Espaces */
+    --space-sm: 0.125rem;
+    /* 2px */
+    --space-base: 0.25rem;
+    /* 4px */
+    --space-md: 0.5rem;
+    /* 8px */
+    --space-lg: 0.75rem;
+    /* 12px */
+    --space-xl: 1rem;
+    /* 16px */
+    --space-2xl: 1.25rem;
+    /* 20px */
+    --space-3xl: 1.5rem;
+    /* 24px */
+    --space-4xl: 2rem;
+    /* 32px */
+    --space-5xl: 2.5rem;
+    /* 40px */
+    --space-6xl: 3.25rem;
+    /* 52px */
 }

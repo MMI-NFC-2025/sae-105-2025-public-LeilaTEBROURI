@@ -1,0 +1,143 @@
+/* Hamburger button */
+.menu-btn {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    padding: 8px;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menu-btn__bar {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #111;
+    border-radius: 2px;
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.menu-btn__bar--top {
+    transform: translateY(-5px);
+}
+
+.menu-btn__bar--bottom {
+    transform: translateY(5px);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--top {
+    transform: translateY(0) rotate(45deg);
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar--bottom {
+    transform: translateY(0) rotate(-45deg);
+}
+
+/* Overlay nav (class .nav on your <nav id="mainNav">) */
+.nav {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: grid;
+    place-items: center;
+    z-index: 999;
+}
+
+.nav[hidden] {
+    display: none;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 16px;
+    text-align: center;
+}
+
+.nav__link {
+    font-family: var(--sans, Inter);
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.menu {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    color: var();
+    display: flex;
+    gap: var(--space-5xl);
+    flex-direction: column;
+    padding: var(--space-4xl);
+    background-color: var(--dark-blue);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.menu[hidden] {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.menulist,
+.menusocial-list,
+.menuimg {
+    position: relative;
+}
+
+.menulist {
+    margin-top: 6rem;
+    list-style: none;
+    padding: 0;
+}
+
+.menuitem {
+    margin-bottom: var(--space-lg);
+}
+
+.menuimg {
+    border-radius: var(--space-md);
+}
+
+.menulink {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: var(--body);
+    transition: color 0.3s ease;
+}
+
+.menulink:hover {
+    color: var(--white);
+}
+
+.menusocial-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 0;
+    gap: var(--space-xl);
+}
+
+.menusocial-link {
+    color: var(--blue-deep);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu__social-link:hover {
+    color: var(--blue);
+}
