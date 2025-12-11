@@ -8,20 +8,27 @@
     background-color: #f5e8d4;
     border: 3px solid #000;
     border-radius: 30px;
-    padding: var(--space-5xl) var(--space-4xl);
+    padding: var(--space-4xl) var(--space-3xl);
     margin: var(--space-5xl) var(--space-xl);
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Edition Title */
 .festival__section--edition .festival__subtitle {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 6vw, 3rem);
     background: linear-gradient(90deg, #5f44b5 0%, #d946a5 50%, #f8855c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: var(--space-5xl);
+    margin-bottom: var(--space-4xl);
     text-transform: uppercase;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    width: 100%;
 }
 
 /* Agenda List */
@@ -37,10 +44,12 @@
 /* Agenda Items */
 .festival__agenda-item {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 4vw, 1.5rem);
     color: #000;
     line-height: 1.4;
     text-transform: uppercase;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .festival__agenda-item strong {
