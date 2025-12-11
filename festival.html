@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-        name="Découvrez Lumimix, festival électro innovant à Malsaucy. Notre équipe, nos valeurs d'inclusion, créativité et divertissement. Une expérience où musique et lumière racontent une histoire."
-        <title>Le Festival</title>
+    <meta name="description"
+        content="Découvrez Lumimix, festival électro innovant à Malsaucy. Notre équipe, nos valeurs d'inclusion, créativité et divertissement. Une expérience où musique et lumière racontent une histoire.">
+    <title>Le Festival</title>
     <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
@@ -24,27 +24,22 @@
 </head>
 
 <body class="page page--festival">
-    <header class="header">
-        <div class="header__brand">
-            <a class="header__link" href="/">
-                <img class="header__logo header__logo--light" src="/assets/icons/logo.avif" alt="Logo Lumimix" />
-            </a>
-        </div>
-        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--top" aria-hidden="true"></span>
-            <span class="menu-btn__bar menu-btn__bar--light menu-btn__bar--bottom" aria-hidden="true"></span>
-        </button>
-        <nav class="header__nav nav" id="mainNav" aria-hidden="true">
-            <ul class="nav__list">
-                <li><a href="/festival.html">Le Festival</a></li>
-                <li><a href="/programme.html">Programme</a></li>
-                <li><a href="/artistes.html">Artistes</a></li>
-                <li><a href="/scenes.html">Scènes</a></li>
-                <li><a href="/infos_pratiques.html">Infos pratiques</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header"> <a class="header__link" href="/"> <img class="header__logo" src="/assets/icons/logo.avif"
+                width="70px" height="72px" alt="Logo Lumimix" /> </a> <button class="header__menu-btn menu-btn"
+            aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <span
+                class="menu-btn__bar menu-btn__bar--top"></span> <span
+                class="menu-btn__bar menu-btn__bar--bottom"></span> </button>
     </header>
+    <nav class="header__nav nav" id="mainNav" hidden>
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="/festival.html">Le Festival</a></li>
+            <li class="nav__item"><a class="nav__link" href="/programme.html">Programme</a></li>
+            <li class="nav__item"><a class="nav__link" href="/artistes.html">Artistes</a></li>
+            <li class="nav__item"><a class="nav__link" href="/scenes.html">Scènes</a></li>
+            <li class="nav__item"><a class="nav__link" href="/infos_pratiques.html">Infos pratiques</a></li>
+            <li class="nav__item"><a class="nav__link" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main class="page__main festival">
         <section class="festival__section festival__section--history">
@@ -113,70 +108,73 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__brand">
-            <img class="footer__logo" src="/assets/icons/logo.avif" alt="Logo Lumimix" loading="lazy">
-            <p class="footer__baseline">LUMIMIX FESTIVAL 7-8-9 août 2026 · Malsaucy, Belfort</p>
+        <div class="footer__brand"> <img class="footer__logo" src="/assets/icons/logo.avif" width="70px" height="72px"
+                alt="Logo Lumimix" loading="lazy">
+            <h1 class="footer__baseline">LUMIMIX FESTIVAL 7-8-9 août </h1>
+            <h1>2026 · Malsaucy, Belfort</h1>
         </div>
-        <div class="footer__grid">
+        <div class="footer__grid"> <!-- Navigation Section -->
             <section class="footer__section footer__section--nav">
-                <h2 class="footer__title">Navigation</h2>
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/festival.html">Le
-                            Festival</a></li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/programme.html">Programme</a>
-                    </li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/artistes.html">Artistes</a>
-                    </li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/scenes.html">Scènes</a>
-                    </li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/infos_pratiques.html">Infos
-                            pratiques</a></li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </section>
+                <h1 class="footer__title">Navigation</h1>
+                <div class="footer__nav-columns">
+                    <div class="footer__nav-column">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/festival.html">Le
+                                    Festival</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link"
+                                    href="/programme.html">Programme</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/artistes.html">Artistes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/scenes.html">Scènes</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/infos_pratiques.html">Infos
+                                    pratiques</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> <!-- Contact Section -->
             <section class="footer__section footer__section--contact">
-                <h2 class="footer__title">Contact</h2>
+                <h1 class="footer__title">Contact</h1>
                 <p class="footer__contact-item">contact@lumimix-festival.fr</p>
                 <p class="footer__contact-item">XX.XX.XX.XX.XX</p>
-            </section>
-            <section class="footer__section footer__section--social">
-                <h2 class="footer__title">Réseaux sociaux</h2>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="https://instagram.com">
-                            <img class="footer__social-icon" src="/assets/icons/instagram 1.svg" alt="Icône Instagram"
-                                loading="lazy">
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="https://facebook.com">
-                            <img class="footer__social-icon" src="/assets/icons/facebook 1.svg" alt="Icône Facebook"
-                                loading="lazy">
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="https://youtube.com">
-                            <img class="footer__social-icon" src="/assets/icons/youtube 1.svg" alt="Icône YouTube"
-                                loading="lazy">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__section footer__section--legal">
-                <h2 class="footer__title">Légal</h2>
-                <ul class="footer__legal-list">
-                    <li class="footer__legal-item">Mentions légales</li>
-                    <li class="footer__legal-item">CGV</li>
-                    <li class="footer__legal-item">Politique de confidentialité</li>
-                </ul>
-            </section>
-        </div>
-        <div class="footer__partners">
-            <img class="footer__partners-img" src="/assets/img/parenaires1.avif"
+            </section> <!-- Social Media Section -->
+            <div class="footer__social-legal-flex">
+                <section class="footer__section footer__section--social">
+                    <h1 class="footer__title">Réseaux sociaux</h1>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item"> <a class="footer__social-link" href="https://instagram.com">
+                                <img class="footer__social-icon" src="/assets/icons/instagram 1.svg"
+                                    alt="Icône Instagram" loading="lazy"> </a> </li>
+                        <li class="footer__social-item"> <a class="footer__social-link" href="https://facebook.com">
+                                <img class="footer__social-icon" src="/assets/icons/facebook 1.svg" alt="Icône Facebook"
+                                    loading="lazy"> </a> </li>
+                        <li class="footer__social-item"> <a class="footer__social-link" href="https://youtube.com">
+                                <img class="footer__social-icon" src="/assets/icons/youtube 1.svg" alt="Icône YouTube"
+                                    loading="lazy"> </a> </li>
+                    </ul>
+                </section>
+                <!-- Legal Section -->
+                <section class="footer__section footer__section--legal">
+                    <h1 class="footer__title">Légal</h1>
+                    <ul class="footer__legal-list">
+                        <li class="footer__legal-item"><a class="footer__legal-link" href="#">Mentions légales</a>
+                        </li>
+                        <li class="footer__legal-item"><a class="footer__legal-link" href="#">CGV</a></li>
+                        <li class="footer__legal-item"><a class="footer__legal-link" href="#">Politique de
+                                confidentialité</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div> <!-- Partners Section -->
+        <div class="footer__partners"> <img class="footer__partners-img" src="/assets/img/parenaires1.avif"
+                width="385px" height="44px"
                 alt="Logos des partenaires Pass Culture, Thomann, Redbull, L'Est Républicain et Pioneer DJ"
-                loading="lazy">
-        </div>
+                loading="lazy"> </div>
     </footer>
 </body>
 

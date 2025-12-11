@@ -14,13 +14,22 @@ body {
     background-size: 390px auto;
     background-repeat: repeat;
     color: black;
-    padding-top: 120px;
-    /* Hauteur du header fixe + marge */
+    padding-top: 0;
+}
+
+/* Pas de padding nécessaire : header est fixed */
+body.page {
+    padding-top: 0;
 }
 
 /* Pas de padding sur la page d'accueil car elle a le hero */
 body:not(.page) {
     padding-top: 0;
+}
+
+/* Padding sur main pour les pages avec header fixe */
+body.page main {
+    padding-top: 100px;
 }
 
 body.u-noscroll {

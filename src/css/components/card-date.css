@@ -1,0 +1,97 @@
+/* Quick Access Icons */
+.quick-access {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: var(--space-2xl);
+    padding: var(--space-4xl) var(--space-xl);
+}
+
+.quick-access__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    text-decoration: none;
+}
+
+.quick-access__item::after {
+    content: attr(data-label);
+    font-family: var(--sansInter);
+    font-size: var(----text-s--);
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.quick-access__icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+    align-items: flex-start;
+    text-align: left;
+    padding: var(--space-5xl) var(--space-xl);
+    margin-top: var(--space-5xl);
+}
+
+.date__title {
+    margin: 0;
+    font-size: var(----3xl-header--);
+}
+
+.date__subtitle {
+    margin: 0;
+    font-size: var(----text-s--);
+}
+
+.date__subtitle:first-of-type {
+    margin-bottom: 0;
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-base);
+    padding: 14px 22px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #7d2fa0 0%, #f8855c 100%);
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--headers-1-2-et-3);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn__link {
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background: #f3eccf;
+    color: var(--dark);
+}

@@ -19,7 +19,7 @@
     <script type="module" src="./src/js/script.js"></script>
 </head>
 
-<body> <!-- Header -->
+<body>
     <header class="header"> <a class="header__link" href="/"> <img class="header__logo"
                 src="/assets/icons/logofooter.avif" width="70px" height="72px" alt="Logo Lumimix" /> </a> <button
             class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"> <span
@@ -28,35 +28,37 @@
     </header>
     <nav class="header__nav nav" id="mainNav" hidden>
         <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="/src/html/festival.html">Le Festival</a></li>
-            <li class="nav__item"><a class="nav__link" href="/src/html/programme.html">Programme</a></li>
-            <li class="nav__item"><a class="nav__link" href="/src/html/artistes.html">Artistes</a></li>
-            <li class="nav__item"><a class="nav__link" href="/src/html/scenes.html">Scènes</a></li>
-            <li class="nav__item"><a class="nav__link" href="/src/html/infos_pratiques.html">Infos pratiques</a>
+            <li class="nav__item"><a class="nav__link" href="/festival.html">Le Festival</a></li>
+            <li class="nav__item"><a class="nav__link" href="/programme.html">Programme</a></li>
+            <li class="nav__item"><a class="nav__link" href="/artistes.html">Artistes</a></li>
+            <li class="nav__item"><a class="nav__link" href="/scenes.html">Scènes</a></li>
+            <li class="nav__item"><a class="nav__link" href="/infos_pratiques.html">Infos pratiques</a>
             </li>
-            <li class="nav__item"><a class="nav__link" href="/src/html/contact.html">Contact</a></li>
+            <li class="nav__item"><a class="nav__link" href="/contact.html">Contact</a></li>
         </ul>
     </nav>
-    <! <main>
+    <!-- Hero Section -->
+    <main>
         <div class="hero">
             <img class="header__logo-secondary" src="/assets/icons/logolumimixe1.avif" width="50px" height="52px"
                 alt="Logo Lumimix">
-            <h1>OSE LA LUMIÈRE, <h1>OSE LE SON</h1>
-                <h1>VIENS VIVRE LA NUIT À LUMIMIX</h1>
-            </h1>
+            <h1>OSE LA LUMIÈRE</h1>
+            <h1>OSE LE SON</h1>
+            <h1>VIENS VIVRE LA NUIT À LUMIMIX</h1>
         </div>
-        <div class="quick-access"> <a href="/src/html/programme.html" class="quick-access__item"> <img
+        <div class="quick-access"> <a href="/programme.html" class="quick-access__item" data-label="Programme"> <img
                     class="quick-access__icon" src="/assets/icons/icon programme.png" alt="icone pour le programme">
-            </a> <a href="/src/html/artistes.html" class="quick-access__item"> <img class="quick-access__icon"
-                    src="/assets/icons/icon artistes.png" alt="icone pour la partie artistes"> </a> <a
-                href="/src/html/infos_pratiques.html" class="quick-access__item"> <img class="quick-access__icon"
+            </a> <a href="/artistes.html" class="quick-access__item" data-label="Artistes"> <img
+                    class="quick-access__icon" src="/assets/icons/icon artistes.png"
+                    alt="icone pour la partie artistes"> </a> <a href="/infos_pratiques.html" class="quick-access__item"
+                data-label="Infos pratiques"> <img class="quick-access__icon"
                     src="/assets/icons/icon infos pratiques.png" alt="icone pour les infos pratiques"> </a> </div>
         <!-- Hero Section -->
         <section class="date">
             <h1 class="date__title">7, 8 et 9 juillet 2026</h1>
             <h2 class="date__subtitle">Presqu'île de Malsaucy, Belfort</h2>
-            <h2 class="date__subtitle">3 nuits inoubliables</h2> <button class="date__cta btn"> <a class="btn__link"
-                    href="/src/html/billetterie.html">Réserve ta place</a> </button>
+            <h2 class="date__subtitle">3 nuits inoubliables</h2>
+            <a class="date__cta btn" href="https://www.ticketmaster.fr/">RÉSERVE TA PLACE</a>
         </section> <!-- Concept Section -->
         <section class="concept">
             <h2 class="concept__title">Le concept</h2> <!-- Carousel Controls -->
@@ -92,95 +94,93 @@
                     <div class="schedule__day-content">
                         <p class="schedule__day-label">Vendredi 7 août</p>
                         <p class="schedule__day-theme">Soirée d'ouverture électro</p>
-                    </div> <a class="schedule__link btn" href="/src/html/programme.html">En savoir plus</a>
+                    </div> <a class="schedule__link btn" href="/programme.html">En savoir plus</a>
                 </article>
                 <article class="schedule__day">
                     <div class="schedule__day-content">
                         <p class="schedule__day-label">Samedi 8 août</p>
                         <p class="schedule__day-theme">Nuit fusion : électro, reggae, chill</p>
-                    </div> <a class="schedule__link btn" href="/src/html/programme.html">En savoir plus</a>
+                    </div> <a class="schedule__link btn" href="/programme.html">En savoir plus</a>
                 </article>
                 <article class="schedule__day">
                     <div class="schedule__day-content">
                         <p class="schedule__day-label">Dimanche 9 août</p>
                         <p class="schedule__day-theme">Clôture festive</p>
-                    </div> <a class="schedule__link btn" href="/src/html/programme.html">En savoir plus</a>
+                    </div> <a class="schedule__link btn" href="/programme.html">En savoir plus</a>
                 </article>
             </div>
         </section>
-        </main> <!-- Footer -->
-        <footer class="footer">
-            <div class="footer__brand"> <img class="footer__logo" src="/assets/icons/logo.avif" width="70px"
-                    height="72px" alt="Logo Lumimix" loading="lazy">
-                <h1 class="footer__baseline">LUMIMIX FESTIVAL 7-8-9 août </h1>
-                <h1>2026 · Malsaucy, Belfort</h1>
-            </div>
-            <div class="footer__grid"> <!-- Navigation Section -->
-                <section class="footer__section footer__section--nav">
-                    <h1 class="footer__title">Navigation</h1>
-                    <div class="footer__nav-columns">
-                        <div class="footer__nav-column">
-                            <ul class="footer__nav-list">
-                                <li class="footer__nav-item"><a class="footer__nav-link"
-                                        href="/src/html/festival.html">Le
-                                        Festival</a></li>
-                                <li class="footer__nav-item"><a class="footer__nav-link"
-                                        href="/src/html/programme.html">Programme</a></li>
-                                <li class="footer__nav-item"><a class="footer__nav-link"
-                                        href="/src/html/artistes.html">Artistes</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__nav-column">
-                            <ul class="footer__nav-list">
-                                <li class="footer__nav-item"><a class="footer__nav-link"
-                                        href="/src/html/scenes.html">Scènes</a></li>
-                                <li class="footer__nav-item"><a class="footer__nav-link"
-                                        href="/src/html/infos_pratiques.html">Infos pratiques</a></li>
-                                <li class="footer__nav-item"><a class="footer__nav-link"
-                                        href="/src/html/contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section> <!-- Contact Section -->
-                <section class="footer__section footer__section--contact">
-                    <h1 class="footer__title">Contact</h1>
-                    <p class="footer__contact-item">contact@lumimix-festival.fr</p>
-                    <p class="footer__contact-item">XX.XX.XX.XX.XX</p>
-                </section> <!-- Social Media Section -->
-                <div class="footer__social-legal-flex">
-                    <section class="footer__section footer__section--social">
-                        <h1 class="footer__title">Réseaux sociaux</h1>
-                        <ul class="footer__social-list">
-                            <li class="footer__social-item"> <a class="footer__social-link"
-                                    href="https://instagram.com">
-                                    <img class="footer__social-icon" src="/assets/icons/instagram 1.svg"
-                                        alt="Icône Instagram" loading="lazy"> </a> </li>
-                            <li class="footer__social-item"> <a class="footer__social-link" href="https://facebook.com">
-                                    <img class="footer__social-icon" src="/assets/icons/facebook 1.svg"
-                                        alt="Icône Facebook" loading="lazy"> </a> </li>
-                            <li class="footer__social-item"> <a class="footer__social-link" href="https://youtube.com">
-                                    <img class="footer__social-icon" src="/assets/icons/youtube 1.svg"
-                                        alt="Icône YouTube" loading="lazy"> </a> </li>
-                        </ul>
-                    </section>
-                    <!-- Legal Section -->
-                    <section class="footer__section footer__section--legal">
-                        <h1 class="footer__title">Légal</h1>
-                        <ul class="footer__legal-list">
-                            <li class="footer__legal-item"><a class="footer__legal-link" href="#">Mentions légales</a>
+    </main> <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__brand"> <img class="footer__logo" src="/assets/icons/logo.avif" width="70px" height="72px"
+                alt="Logo Lumimix" loading="lazy">
+            <h1 class="footer__baseline">LUMIMIX FESTIVAL 7-8-9 août </h1>
+            <h1>2026 · Malsaucy, Belfort</h1>
+        </div>
+        <div class="footer__grid"> <!-- Navigation Section -->
+            <section class="footer__section footer__section--nav">
+                <h1 class="footer__title">Navigation</h1>
+                <div class="footer__nav-columns">
+                    <div class="footer__nav-column">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/festival.html">Le
+                                    Festival</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link"
+                                    href="/programme.html">Programme</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/artistes.html">Artistes</a>
                             </li>
-                            <li class="footer__legal-item"><a class="footer__legal-link" href="#">CGV</a></li>
-                            <li class="footer__legal-item"><a class="footer__legal-link" href="#">Politique de
-                                    confidentialité</a></li>
                         </ul>
-                    </section>
+                    </div>
+                    <div class="footer__nav-column">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/scenes.html">Scènes</a>
+                            </li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/infos_pratiques.html">Infos
+                                    pratiques</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div> <!-- Partners Section -->
-            <div class="footer__partners"> <img class="footer__partners-img" src="/assets/img/parenaires1.avif"
-                    width="385px" height="44px"
-                    alt="Logos des partenaires Pass Culture, Thomann, Redbull, L'Est Républicain et Pioneer DJ"
-                    loading="lazy"> </div>
-        </footer>
+            </section> <!-- Contact Section -->
+            <section class="footer__section footer__section--contact">
+                <h1 class="footer__title">Contact</h1>
+                <p class="footer__contact-item">contact@lumimix-festival.fr</p>
+                <p class="footer__contact-item">XX.XX.XX.XX.XX</p>
+            </section> <!-- Social Media Section -->
+            <div class="footer__social-legal-flex">
+                <section class="footer__section footer__section--social">
+                    <h1 class="footer__title">Réseaux sociaux</h1>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item"> <a class="footer__social-link" href="https://instagram.com">
+                                <img class="footer__social-icon" src="/assets/icons/instagram 1.svg"
+                                    alt="Icône Instagram" loading="lazy"> </a> </li>
+                        <li class="footer__social-item"> <a class="footer__social-link" href="https://facebook.com">
+                                <img class="footer__social-icon" src="/assets/icons/facebook 1.svg" alt="Icône Facebook"
+                                    loading="lazy"> </a> </li>
+                        <li class="footer__social-item"> <a class="footer__social-link" href="https://youtube.com">
+                                <img class="footer__social-icon" src="/assets/icons/youtube 1.svg" alt="Icône YouTube"
+                                    loading="lazy"> </a> </li>
+                    </ul>
+                </section>
+                <!-- Legal Section -->
+                <section class="footer__section footer__section--legal">
+                    <h1 class="footer__title">Légal</h1>
+                    <ul class="footer__legal-list">
+                        <li class="footer__legal-item"><a class="footer__legal-link" href="#">Mentions légales</a>
+                        </li>
+                        <li class="footer__legal-item"><a class="footer__legal-link" href="#">CGV</a></li>
+                        <li class="footer__legal-item"><a class="footer__legal-link" href="#">Politique de
+                                confidentialité</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div> <!-- Partners Section -->
+        <div class="footer__partners"> <img class="footer__partners-img" src="/assets/img/parenaires1.avif"
+                width="385px" height="44px"
+                alt="Logos des partenaires Pass Culture, Thomann, Redbull, L'Est Républicain et Pioneer DJ"
+                loading="lazy"> </div>
+    </footer>
 </body>
 
 </html>
