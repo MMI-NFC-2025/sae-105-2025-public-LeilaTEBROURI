@@ -1,0 +1,101 @@
+/* Concept carousel */
+.concept {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+    padding: var(--space-4xl) var(--space-xl);
+}
+
+.concept__header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.concept__title {
+    margin: 0;
+    font-size: var(----2xl-header--);
+}
+
+.concept__controls {
+    margin-left: auto;
+    display: flex;
+    gap: var(--space-xl);
+}
+
+.concept__btn {
+    width: 64px;
+    height: 64px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #fda37a 0%, #a353b5 60%, #5f44b5 100%);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.concept__btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.concept__icon {
+    width: 24px;
+    height: 24px;
+}
+
+.concept__slides {
+    position: relative;
+}
+
+.concept-card {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+}
+
+.concept-card.is-active {
+    display: flex;
+}
+
+.concept-card__image {
+    width: 100%;
+    height: auto;
+    border-radius: 28px 28px 0 0;
+    object-fit: cover;
+}
+
+.concept-card__body {
+    background: #f3eccf;
+    color: black;
+    padding: var(--space-4xl) var(--space-3xl);
+    border-radius: 0 0 28px 28px;
+}
+
+.concept-card__title {
+    margin: 0 0 var(--space-lg) 0;
+    font-size: var(----xl-header--);
+}
+
+.concept-card__description {
+    margin: 0;
+    font-size: var(----text-l--);
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .concept {
+        padding: var(--space-5xl) var(--space-4xl);
+    }
+
+    .concept__controls {
+        gap: var(--space-2xl);
+    }
+
+    .concept-card__description {
+        font-size: var(----text-xl--);
+    }
+}

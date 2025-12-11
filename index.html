@@ -61,31 +61,56 @@
             <a class="date__cta btn" href="https://www.ticketmaster.fr/">RÉSERVE TA PLACE</a>
         </section> <!-- Concept Section -->
         <section class="concept">
-            <h2 class="concept__title">Le concept</h2> <!-- Carousel Controls -->
-            <div class="carousel"> <button class="carousel__btn carousel__btn--prev" aria-label="Previous"> <img
-                        class="carousel__icon" src="/assets/icons/carrousel left.svg" alt="fleche droite pour carrousel"
-                        loading="lazy" /> </button> <button class="carousel__btn carousel__btn--next" aria-label="Next">
-                    <img class="carousel__icon" src="/assets/icons/carrousel right.svg"
-                        alt="fleche gauche pour carrousel" loading="lazy" /> </button> </div> <!-- Concept Cards -->
-            <article class="concept-card"> <img class="concept-card__image" src="/assets/img/deltea1.avif" alt=""
-                    loading="lazy">
-                <h3 class="concept-card__title">Musique</h3>
-                <p class="concept-card__description"> Les meilleurs DJs électro, reggae et chill. Des sets uniques qui
-                    racontent une histoire. David Guetta - Martin Garrix - Kungs - Ofenbach - Charlotte de Witte - Petit
-                    Biscuit - Manudigital - Ben Böhmer - Thylacine - Worakls </p>
-            </article>
-            <article class="concept-card"> <img class="concept-card__image" src="/assets/img/choreography de drone.webp"
-                    alt="" loading="lazy">
-                <h3 class="concept-card__title">LUMIÈRE</h3>
-                <p class="concept-card__description"> Chorégraphies de drones lumineux Projections sur l'eau du lac
-                    Bracelets interactifs pour tous les festivaliers </p>
-            </article>
-            <article class="concept-card"> <img class="concept-card__image" src="/assets/img/scenedefestivaldj3.avif"
-                    alt="" loading="lazy">
-                <h3 class="concept-card__title">EXPÉRIENCE</h3>
-                <p class="concept-card__description"> 2 scènes avec leurs identités propres Une immersion sensorielle
-                    totale Un festival pensé pour époustoufler </p>
-            </article>
+            <div class="concept__header">
+                <h2 class="concept__title">Le concept</h2>
+                <div class="concept__controls">
+                    <button class="concept__btn concept__btn--prev" aria-label="Précédent">
+                        <img class="concept__icon" src="/assets/icons/carrousel left.svg" width="40px" height="40px"
+                            alt="Précédent" loading="lazy" />
+                    </button>
+                    <button class="concept__btn concept__btn--next" aria-label="Suivant">
+                        <img class="concept__icon" src="/assets/icons/carrousel right.svg" width="40px" height="40px"
+                            alt="Suivant" loading="lazy" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="concept__slides">
+                <article class="concept-card is-active" data-index="0">
+                    <img class="concept-card__image" src="/assets/img/deltea1.avif" alt="DJ devant la foule"
+                        loading="lazy">
+                    <div class="concept-card__body">
+                        <h3 class="concept-card__title">Musique</h3>
+                        <p class="concept-card__description">Les meilleurs DJs électro, reggae et chill. Des sets
+                            uniques qui
+                            racontent une histoire.<br>David Guetta - Martin Garrix - Kungs - Ofenbach - Charlotte de
+                            Witte -
+                            Petit Biscuit - Manudigital - Ben Böhmer - Thylacine - Worakls</p>
+                    </div>
+                </article>
+
+                <article class="concept-card" data-index="1">
+                    <img class="concept-card__image" src="/assets/img/choreography de drone.webp"
+                        alt="Chorégraphies de drones" loading="lazy">
+                    <div class="concept-card__body">
+                        <h3 class="concept-card__title">Lumière</h3>
+                        <p class="concept-card__description">Chorégraphies de drones lumineux, projections sur l'eau du
+                            lac,
+                            bracelets interactifs pour tous les festivaliers.</p>
+                    </div>
+                </article>
+
+                <article class="concept-card" data-index="2">
+                    <img class="concept-card__image" src="/assets/img/scenedefestivaldj3.avif" alt="Scène du festival"
+                        loading="lazy">
+                    <div class="concept-card__body">
+                        <h3 class="concept-card__title">Expérience</h3>
+                        <p class="concept-card__description">Deux scènes avec leurs identités propres, une immersion
+                            sensorielle
+                            totale, un festival pensé pour époustoufler.</p>
+                    </div>
+                </article>
+            </div>
         </section> <!-- Schedule Section -->
         <section class="schedule">
             <h2 class="schedule__title">Programme</h2>

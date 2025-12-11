@@ -17,3 +17,8 @@
 /* Components */
 @import "components/hero.css";
 @import "components/card-date.css";
+@import "components/card-concept.css";
+@import "components/card-programme.css";
+@import "components/card-historique.css";
+@import "components/card-equipe.css";
+@import "components/festival-values.css";

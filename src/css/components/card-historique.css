@@ -1,0 +1,68 @@
+/* History Section */
+.festival__section--history {
+    padding: var(--space-5xl) var(--space-xl);
+}
+
+/* HISTORIQUE Title */
+.festival__section--history h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    background: linear-gradient(90deg, #5f44b5 0%, #d946a5 50%, #f8855c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4xl);
+    text-transform: uppercase;
+}
+
+/* Main Title */
+.festival__title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    background: linear-gradient(90deg, #5f44b5 0%, #d946a5 30%, #f8855c 70%, #f8855c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4xl);
+    text-transform: uppercase;
+}
+
+/* Text content */
+.festival__text {
+    font-family: 'Inter', sans-serif;
+    font-size: var(--text-s);
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: var(--space-4xl);
+}
+
+/* Subtitle */
+.festival__subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: var(----2xl-header--);
+    background: linear-gradient(90deg, #5f44b5 0%, #d946a5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4xl);
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .festival__section--history {
+        padding: var(--space-6xl) var(--space-5xl);
+    }
+
+    .festival__section--history h1 {
+        font-size: 4rem;
+    }
+
+    .festival__title {
+        font-size: 3rem;
+    }
+
+    .festival__subtitle {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,83 @@
+/* Team Section */
+.festival__section--team {
+    background: url(/assets/icons/nuage-top-drones.avif), url(/assets/icons/nuage-bottom-drones.avif), linear-gradient(180deg, var(----orange-degrade--), var(----magenta-degrade--), var(----violet-degrade--));
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center, bottom center;
+    padding: var(--space-5xl) var(--space-xl);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Team Title */
+.festival__section--team .festival__subtitle {
+    color: white;
+    -webkit-text-fill-color: unset;
+    background: none;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: var(--space-4xl);
+}
+
+/* Team Container */
+.festival__team {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4xl);
+}
+
+/* Team Image */
+.festival__img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Team List Container */
+.festival__team-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f5e8d4;
+    border: 3px solid #000;
+    border-radius: 30px;
+    padding: var(--space-4xl) var(--space-3xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+}
+
+/* Team Items */
+.festival__team-item {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #000;
+    line-height: 1.6;
+}
+
+.festival__team-item strong {
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .festival__section--team {
+        padding: var(--space-6xl) var(--space-5xl);
+    }
+
+    .festival__section--team .festival__subtitle {
+        font-size: 3.5rem;
+    }
+
+    .festival__team-list {
+        padding: var(--space-5xl) var(--space-4xl);
+    }
+
+    .festival__team-item {
+        font-size: 1.125rem;
+    }
+}

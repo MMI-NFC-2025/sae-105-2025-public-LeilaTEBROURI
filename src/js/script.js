@@ -56,4 +56,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Concept carousel
+    const slides = Array.from(document.querySelectorAll('.concept-card'));
+    const prev = document.querySelector('.concept__btn--prev');
+    const next = document.querySelector('.concept__btn--next');
+    let current = 0;
+
+    const showSlide = (index) => {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('is-active', i === index);
+        });
+    };
+
+    if (slides.length && prev && next) {
+        showSlide(current);
+
+        prev.addEventListener('click', () => {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        });
+
+        next.addEventListener('click', () => {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        });
+    }
 });

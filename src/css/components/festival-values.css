@@ -1,0 +1,75 @@
+/* Values Section */
+.festival__section--values {
+    padding: var(--space-5xl) var(--space-xl);
+}
+
+/* Section Title */
+.festival__section--values .festival__subtitle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #5f44b5 0%, #d946a5 50%, #f8855c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-5xl);
+    text-transform: uppercase;
+}
+
+/* Values Container */
+.festival__values {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5xl);
+}
+
+/* Individual Value */
+.festival__value {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+}
+
+/* Value Title */
+.festival__value-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #5f44b5 0%, #d946a5 50%, #f8855c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Value Text */
+.festival__value .festival__text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .festival__section--values {
+        padding: var(--space-6xl) var(--space-5xl);
+    }
+
+    .festival__section--values .festival__subtitle {
+        font-size: 3rem;
+        margin-bottom: var(--space-6xl);
+    }
+
+    .festival__values {
+        gap: var(--space-6xl);
+    }
+
+    .festival__value-title {
+        font-size: 2.5rem;
+    }
+
+    .festival__value .festival__text {
+        font-size: 1.25rem;
+    }
+}
