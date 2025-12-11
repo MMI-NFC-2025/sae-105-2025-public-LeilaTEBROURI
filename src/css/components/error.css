@@ -1,0 +1,100 @@
+/* 404 Error Page Styles */
+
+.error {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-6xl) var(--space-3xl);
+    text-align: center;
+}
+
+.error__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3xl);
+}
+
+.error__content h2 {
+    font-family: var(--headers-1-2-et-3) !important;
+    font-size: var(----xl-header--) !important;
+    color: var(--dark) !important;
+    background-image: none !important;
+    -webkit-text-fill-color: unset !important;
+    text-align: left !important;
+}
+
+.error__code {
+    font-family: var(--headers-1-2-et-3);
+    font-size: var(----err-404--);
+    color: var(--dark);
+    margin: 0;
+    line-height: 1;
+}
+
+.error__title {
+    font-family: var(--headers-1-2-et-3) !important;
+    color: var(--dark) !important;
+    background-image: none !important;
+    -webkit-text-fill-color: unset !important;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.error__text {
+    font-family: var(--headers-1-2-et-3) !important;
+    color: var(--dark) !important;
+    background-image: none !important;
+    -webkit-text-fill-color: unset !important;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: left !important;
+    align-self: flex-start;
+}
+
+.error__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5xl);
+    width: 100%;
+}
+
+.error__illustration {
+    max-width: 150px !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+.error__button {
+    text-decoration: none;
+    padding: var(--space-2xl) var(--space-4xl);
+    border-radius: 24px;
+    background: var(--heading-gradient);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--headers-1-2-et-3);
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    transition: all 0.3s ease;
+}
+
+.error__button:hover {
+    background: var(----beige-background--);
+    color: var(--dark);
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+    .error {
+        padding: var(--space-5xl) var(--space-2xl);
+    }
+
+    .error__code {
+        font-size: 100px;
+    }
+
+    .error__illustration {
+        max-width: 200px;
+    }
+}
