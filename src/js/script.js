@@ -101,4 +101,19 @@ document.addEventListener('DOMContentLoaded', () => {
             header.setAttribute('aria-expanded', String(!isExpanded));
         });
     });
+
+    // Infos FAQ accordion: allow only one open at a time
+    const infosAccordions = document.querySelectorAll('.infos__accordion');
+    infosAccordions.forEach(acc => {
+        const items = acc.querySelectorAll('.infos__accordion-item');
+        items.forEach(item => {
+            item.addEventListener('toggle', () => {
+                if (item.open) {
+                    items.forEach(other => {
+                        if (other !== item) other.open = false;
+                    });
+                }
+            });
+        });
+    });
 });

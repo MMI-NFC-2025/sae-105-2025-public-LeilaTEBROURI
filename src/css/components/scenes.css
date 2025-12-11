@@ -1,0 +1,106 @@
+/* Scenes Page (BEM) */
+.scenes {
+    padding: 0 var(--space-xl) var(--space-6xl);
+}
+
+.scenes__section {
+    margin-bottom: var(--space-6xl);
+}
+
+.scenes__title {
+    font-family: var(--headers-1-2-et-3);
+    font-size: clamp(2rem, 7vw, 3rem);
+    background: var(--heading-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 var(--space-3xl);
+    text-transform: uppercase;
+}
+
+.scenes__subtitle {
+    font-family: var(--headers-1-2-et-3);
+    font-size: clamp(1.25rem, 5vw, 2rem);
+    background: var(--heading-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 var(--space-2xl);
+    text-transform: uppercase;
+}
+
+.scenes__meta {
+    font-family: var(--headers-1-2-et-3);
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    background: var(--heading-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: var(--space-2xl) 0;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.scenes__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto var(--space-3xl);
+    max-width: 1100px;
+}
+
+.scenes__text {
+    font-family: var(--sans);
+    font-size: var(----text-m--);
+    line-height: 1.8;
+    color: var(--dark);
+    margin: 0 0 var(--space-3xl);
+}
+
+.scenes__actions {
+    display: flex;
+    gap: var(--space-3xl);
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-4xl) 0;
+}
+
+.scenes__action .btn {
+    padding: 14px 28px;
+}
+
+.scenes__action .btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.scenes__action .btn a:hover {
+    color: var(--dark);
+}
+
+@media (min-width: 768px) {
+    .scenes {
+        padding: 0 var(--space-5xl) var(--space-6xl);
+    }
+
+    .scenes__section {
+        margin-bottom: var(--space-6xl);
+    }
+
+    .scenes__title {
+        font-size: 3rem;
+    }
+
+    .scenes__subtitle {
+        font-size: 2rem;
+    }
+
+    .scenes__meta {
+        font-size: 1.5rem;
+    }
+
+    .scenes__text {
+        font-size: 1.125rem;
+    }
+}
