@@ -1,5 +1,5 @@
 .hero {
-    background: linear-gradient(180deg, var(----orange-degrade--), var(----magenta-degrade--), var(----violet-degrade--));
+    background: url(/assets/icons/nuage-top-drones.avif), url(/assets/icons/nuage-bottom-drones.avif), linear-gradient(180deg, var(----orange-degrade--), var(----magenta-degrade--), var(----violet-degrade--));
     height: 846px;
     position: relative;
     overflow: hidden;
@@ -7,6 +7,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center, bottom center;
 }
 
 .header__logo-secondary {
@@ -17,7 +20,7 @@
 
 .hero>h1 {
     color: white !important;
-    text-shadow: 
+    text-shadow:
         -1px -1px 0 black,
         1px -1px 0 black,
         -1px 1px 0 black,
@@ -27,32 +30,4 @@
     -webkit-background-clip: unset !important;
     background-clip: unset !important;
     -webkit-text-fill-color: white !important;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 200px;
-    background-image: url('/assets/icons/nuage-top.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    z-index: 0;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 200px;
-    background-image: url('/assets/icons/nuage-bottom.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    z-index: 0;
 }
