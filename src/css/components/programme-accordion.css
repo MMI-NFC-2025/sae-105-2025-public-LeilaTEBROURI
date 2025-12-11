@@ -1,0 +1,257 @@
+/* Programme Title */
+.programme__title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    background: linear-gradient(90deg, #5f44b5 0%, #d946a5 50%, #f8855c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-4xl);
+    text-transform: uppercase;
+}
+
+/* Day Section */
+.programme__day {
+    margin-bottom: var(--space-3xl);
+}
+
+/* Accordion Header */
+.programme__accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #a353b5 0%, #d946a5 50%, #f8855c 100%);
+    border: none;
+    border-radius: 20px;
+    padding: var(--space-3xl) var(--space-2xl);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.programme__accordion-header:active {
+    transform: scale(0.98);
+}
+
+/* Day Title in Accordion */
+.programme__accordion-header .programme__day-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    color: white !important;
+    text-transform: uppercase;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-text-fill-color: white !important;
+    background: none !important;
+    background-clip: unset !important;
+    -webkit-background-clip: unset !important;
+}
+
+/* Accordion Icon */
+.programme__accordion-icon {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-left: var(--space-2xl);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+}
+
+/* Accordion Content */
+.programme__accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.programme__accordion-header[aria-expanded="true"]~.programme__accordion-content {
+    max-height: 2000px;
+}
+
+.programme__accordion-header[aria-expanded="true"] .programme__accordion-icon {
+    transform: rotate(45deg);
+}
+
+/* Accordion Body */
+.programme__accordion-body {
+    background-color: #f5e8d4;
+    border: 3px solid #000;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    padding: var(--space-3xl) var(--space-2xl);
+    box-sizing: border-box;
+}
+
+/* Stage */
+.programme__stage {
+    margin-bottom: var(--space-4xl);
+}
+
+.programme__stage:last-child {
+    margin-bottom: 0;
+}
+
+/* Stage Name */
+.programme__stage-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 0 var(--space-2xl) 0;
+    font-weight: 700;
+}
+
+/* Schedule List */
+.programme__schedule {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+}
+
+/* Schedule Item */
+.programme__schedule-item {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    color: #000;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* Download Section */
+.programme__download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4xl);
+    margin-top: var(--space-6xl);
+    padding: var(--space-3xl);
+}
+
+.programme__download-image {
+    width: 150px !important;
+    height: 90px !important;
+    flex-shrink: 0;
+    animation: droneFlight 6s ease-in-out infinite;
+}
+
+@keyframes droneFlight {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    25% {
+        transform: translateX(20px) translateY(-15px);
+    }
+
+    50% {
+        transform: translateX(0) translateY(-25px);
+    }
+
+    75% {
+        transform: translateX(-20px) translateY(-15px);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+.programme__download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2xl);
+    background: linear-gradient(90deg, #a353b5 0%, #d946a5 50%, #f8855c 100%);
+    color: white;
+    text-decoration: none;
+    padding: var(--space-2xl) var(--space-4xl);
+    border-radius: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    text-transform: uppercase;
+    transition: transform 0.2s ease;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.programme__download-btn:active {
+    transform: scale(0.95);
+}
+
+.programme__download-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .programme__title {
+        font-size: 4rem;
+        margin-bottom: var(--space-5xl);
+    }
+
+    .programme__day {
+        margin-bottom: var(--space-4xl);
+    }
+
+    .programme__accordion-header {
+        padding: var(--space-4xl) var(--space-3xl);
+        border-radius: 30px;
+    }
+
+    .programme__accordion-header .programme__day-title {
+        font-size: 2rem;
+    }
+
+    .programme__accordion-icon {
+        font-size: 2.5rem;
+        min-width: 50px;
+        height: 50px;
+    }
+
+    .programme__accordion-body {
+        padding: var(--space-4xl) var(--space-3xl);
+        border-radius: 0 0 30px 30px;
+        border-width: 3px;
+    }
+
+    .programme__stage-name {
+        font-size: 1.5rem;
+        margin-bottom: var(--space-3xl);
+    }
+
+    .programme__schedule {
+        gap: var(--space-3xl);
+    }
+
+    .programme__schedule-item {
+        font-size: 1.125rem;
+    }
+
+    .programme__download {
+        gap: var(--space-5xl);
+        margin-top: var(--space-8xl);
+    }
+
+    .programme__download-image {
+        max-width: 400px;
+    }
+
+    .programme__download-btn {
+        padding: var(--space-3xl) var(--space-4xl);
+        font-size: 1.5rem;
+    }
+}

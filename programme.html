@@ -46,125 +46,172 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>PROGRAMME COMPLET</h1>
-        <section>
-            <h2>VENDREDI 7 AOÛT - L'Éveil</h2>
-            <p>Scène Principale - L'Horizon Lumineux </p>
-            <p>20h00 - 21h30 : DJ Local Belfort</p>
-            <p>21h45 - 23h15 : Petit Biscuit
-            <p>
-            <p>23h30 - 01h00 : Ofenbach</p>
-            <p>01h15 - 03h00 : David Guetta</p>
-            <p>Scène Secondaire - La Clairière Sonore</p>
-            <p>20h30 - 22h00 : Worakls</p>
-            <p>22h15 - 23h45 : Thylacine</p>
-            <p>00h00 - 01h30 : Manudigital </p>
-        </section>
-        <section>
-            <h2>SAMEDI 8 AOÛT - La Fusion</h2>
-            <p>Scène Principale - L'Horizon Lumineux </p>
-            <p>20h00 - 21h30 : DJ Local Besançon</p>
-            <p>21h45 - 23h15 : Ben Böhmer
-            <p>
-            <p>23h30 - 01h00 : Charlotte de Witte</p>
-            <p>01h15 - 03h00 : Martin Garrix</p>
-            <p>Scène Secondaire - La Clairière Sonore</p>
-            <p>20h30 - 22h00 : Manudigital</p>
-            <p>22h15 - 23h45 : Thylacine</p>
-            <p>00h00 - 01h30 : Petit Biscuit </p>
-        </section>
-        <section>
-            <h2>DIMANCHE 9 AOÛT - L'Apogée</h2>
-            <p>Scène Principale - L'Horizon Lumineux </p>
-            <p>20h00 - 21h30 : DJ Local Mulhouse</p>
-            <p>21h45 - 23h15 : Worakls
-            <p>
-            <p>23h30 - 01h00 : Kungs</p>
-            <p>01h15 - 03h00 : Charlotte de Witte</p>
-            <p>Scène Secondaire - La Clairière Sonore</p>
-            <p>20h30 - 22h00 : Ben Böhmer</p>
-            <p>22h15 - 23h45 : Ofenbach</p>
-            <p>00h00 - 01h30 : Manudigital </p>
-        </section>
-        <div>
-            <div>
-                <img src="/assets/img/drone.avif" alt="">
-            </div>
-            <button>
+    <main class="page__main programme">
+        <h1 class="programme__title">PROGRAMME COMPLET</h1>
 
-                <div>
-                    <div>
-                        <a
-                            href="https://cnm.fr/wp-content/uploads/2023/04/Les-festivals-de-musiques-actuelles-en-France-2022.pdf">PDF
-                            DU PROGRAMME</a>
+        <section class="programme__day programme__day--friday">
+            <button class="programme__accordion-header" aria-expanded="false">
+                <h2 class="programme__day-title">VENDREDI 7 AOÛT - L'Éveil</h2>
+                <span class="programme__accordion-icon">+</span>
+            </button>
+            <div class="programme__accordion-content">
+                <div class="programme__accordion-body">
+                    <div class="programme__stage">
+                        <h2 class="programme__stage-name">Scène Principale - L'Horizon Lumineux</h2>
+                        <ul class="programme__schedule">
+                            <li class="programme__schedule-item">20h00 - 21h30 : DJ Local Belfort</li>
+                            <li class="programme__schedule-item">21h45 - 23h15 : Petit Biscuit</li>
+                            <li class="programme__schedule-item">23h30 - 01h00 : Ofenbach</li>
+                            <li class="programme__schedule-item">01h15 - 03h00 : David Guetta</li>
+                        </ul>
                     </div>
-                    <div>
-                        <img src="/assets/icons/telecharger  1.svg" alt="" loading="lazy">
+                    <div class="programme__stage">
+                        <h2 class="programme__stage-name">Scène Secondaire - La Clairière Sonore</h2>
+                        <ul class="programme__schedule">
+                            <li class="programme__schedule-item">20h30 - 22h00 : Worakls</li>
+                            <li class="programme__schedule-item">22h15 - 23h45 : Thylacine</li>
+                            <li class="programme__schedule-item">00h00 - 01h30 : Manudigital</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="programme__day programme__day--saturday">
+            <button class="programme__accordion-header" aria-expanded="false">
+                <h2 class="programme__day-title">SAMEDI 8 AOÛT - La Fusion</h2>
+                <span class="programme__accordion-icon">+</span>
             </button>
+            <div class="programme__accordion-content">
+                <div class="programme__accordion-body">
+                    <div class="programme__stage">
+                        <h2 class="programme__stage-name">Scène Principale - L'Horizon Lumineux</h2>
+                        <ul class="programme__schedule">
+                            <li class="programme__schedule-item">20h00 - 21h30 : DJ Local Besançon</li>
+                            <li class="programme__schedule-item">21h45 - 23h15 : Ben Böhmer</li>
+                            <li class="programme__schedule-item">23h30 - 01h00 : Charlotte de Witte</li>
+                            <li class="programme__schedule-item">01h15 - 03h00 : Martin Garrix</li>
+                        </ul>
+                    </div>
+                    <div class="programme__stage">
+                        <h2 class="programme__stage-name">Scène Secondaire - La Clairière Sonore</h2>
+                        <ul class="programme__schedule">
+                            <li class="programme__schedule-item">20h30 - 22h00 : Manudigital</li>
+                            <li class="programme__schedule-item">22h15 - 23h45 : Thylacine</li>
+                            <li class="programme__schedule-item">00h00 - 01h30 : Petit Biscuit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programme__day programme__day--sunday">
+            <button class="programme__accordion-header" aria-expanded="false">
+                <h2 class="programme__day-title">DIMANCHE 9 AOÛT - L'Apogée</h2>
+                <span class="programme__accordion-icon">+</span>
+            </button>
+            <div class="programme__accordion-content">
+                <div class="programme__accordion-body">
+                    <div class="programme__stage">
+                        <h2 class="programme__stage-name">Scène Principale - L'Horizon Lumineux</h2>
+                        <ul class="programme__schedule">
+                            <li class="programme__schedule-item">20h00 - 21h30 : DJ Local Mulhouse</li>
+                            <li class="programme__schedule-item">21h45 - 23h15 : Worakls</li>
+                            <li class="programme__schedule-item">23h30 - 01h00 : Kungs</li>
+                            <li class="programme__schedule-item">01h15 - 03h00 : Charlotte de Witte</li>
+                        </ul>
+                    </div>
+                    <div class="programme__stage">
+                        <h2 class="programme__stage-name">Scène Secondaire - La Clairière Sonore</h2>
+                        <ul class="programme__schedule">
+                            <li class="programme__schedule-item">20h30 - 22h00 : Ben Böhmer</li>
+                            <li class="programme__schedule-item">22h15 - 23h45 : Ofenbach</li>
+                            <li class="programme__schedule-item">00h00 - 01h30 : Manudigital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="programme__download">
+            <img class="programme__download-image" src="/assets/img/drone.avif" alt="Drone illustration">
+            <a class="programme__download-btn"
+                href="https://cnm.fr/wp-content/uploads/2023/04/Les-festivals-de-musiques-actuelles-en-France-2022.pdf">
+                <span class="programme__download-text">PDF DU PROGRAMME</span>
+                <img class="programme__download-icon" src="/assets/icons/telecharger  1.svg" alt="Icône télécharger"
+                    loading="lazy">
+            </a>
         </div>
     </main>
     <footer class="footer">
         <div class="footer__brand">
             <img class="footer__logo" src="/assets/icons/logo.avif" alt="Logo Lumimix" loading="lazy">
-            <p class="footer__baseline">LUMIMIX FESTIVAL 7-8-9 août 2026 · Malsaucy, Belfort</p>
+            <h1 class="footer__baseline">LUMIMIX FESTIVAL 7-8-9 août </h1>
+            <h1>2026 · Malsaucy, Belfort</h1>
         </div>
         <div class="footer__grid">
             <section class="footer__section footer__section--nav">
-                <h2 class="footer__title">Navigation</h2>
-                <ul class="footer__nav-list">
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/festival.html">Le
-                            Festival</a></li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/programme.html">Programme</a>
-                    </li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/artistes.html">Artistes</a>
-                    </li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/scenes.html">Scènes</a>
-                    </li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/infos_pratiques.html">Infos
-                            pratiques</a></li>
-                    <li class="footer__nav-item"><a class="footer__nav-link" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
+                <h1 class="footer__title">Navigation</h1>
+                <div class="footer__nav-columns">
+                    <div class="footer__nav-column">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/festival.html">Le
+                                    Festival</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link"
+                                    href="/programme.html">Programme</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/artistes.html">Artistes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-column">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/scenes.html">Scènes</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/infos_pratiques.html">Infos
+                                    pratiques</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <section class="footer__section footer__section--contact">
-                <h2 class="footer__title">Contact</h2>
+                <h1 class="footer__title">Contact</h1>
                 <p class="footer__contact-item">contact@lumimix-festival.fr</p>
                 <p class="footer__contact-item">XX.XX.XX.XX.XX</p>
             </section>
-            <section class="footer__section footer__section--social">
-                <h2 class="footer__title">Réseaux sociaux</h2>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="https://instagram.com">
-                            <img class="footer__social-icon" src="/assets/icons/instagram 1.svg" alt="Icône Instagram"
-                                loading="lazy">
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="https://facebook.com">
-                            <img class="footer__social-icon" src="/assets/icons/facebook 1.svg" alt="Icône Facebook"
-                                loading="lazy">
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__social-link" href="https://youtube.com">
-                            <img class="footer__social-icon" src="/assets/icons/youtube 1.svg" alt="Icône YouTube"
-                                loading="lazy">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__section footer__section--legal">
-                <h2 class="footer__title">Légal</h2>
-                <ul class="footer__legal-list">
-                    <li class="footer__legal-item">Mentions légales</li>
-                    <li class="footer__legal-item">CGV</li>
-                    <li class="footer__legal-item">Politique de confidentialité</li>
-                </ul>
-            </section>
+            <div class="footer__social-legal-flex">
+                <section class="footer__section footer__section--social">
+                    <h1 class="footer__title">Réseaux sociaux</h1>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://instagram.com">
+                                <img class="footer__social-icon" src="/assets/icons/instagram 1.svg"
+                                    alt="Icône Instagram" loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://facebook.com">
+                                <img class="footer__social-icon" src="/assets/icons/facebook 1.svg" alt="Icône Facebook"
+                                    loading="lazy">
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://youtube.com">
+                                <img class="footer__social-icon" src="/assets/icons/youtube 1.svg" alt="Icône YouTube"
+                                    loading="lazy">
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="footer__section footer__section--legal">
+                    <h1 class="footer__title">Légal</h1>
+                    <ul class="footer__legal-list">
+                        <li class="footer__legal-item">Mentions légales</li>
+                        <li class="footer__legal-item">CGV</li>
+                        <li class="footer__legal-item">Politique de confidentialité</li>
+                    </ul>
+                </section>
+            </div>
         </div>
         <div class="footer__partners">
             <img class="footer__partners-img" src="/assets/img/parenaires1.avif"

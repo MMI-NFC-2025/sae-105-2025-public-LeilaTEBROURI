@@ -46,12 +46,12 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>LES SCÈNES DE LUMIMIX</h1>
-            <h2>Scène Principale - L'Horizon Lumineux</h2>
-            <img src="/assets/img/scenedefestivaldj3.avif" alt="scene festival principale"></img>
-            <h3>Localisation : Face au lac de Malsaucy
+    <main class="scenes">
+        <section class="scenes__section scenes__section--main">
+            <h1 class="scenes__title">LES SCÈNES DE LUMIMIX</h1>
+            <h2 class="scenes__subtitle">Scène Principale - L'Horizon Lumineux</h2>
+            <img class="scenes__image" src="/assets/img/scenedefestivaldj3.avif" alt="scene festival principale"></img>
+            <h3 class="scenes__meta">Localisation : Face au lac de Malsaucy
                 Capacité : 15 000 personnes</h3>
             <p>La scène principale du festival offre une vue imprenable sur le lac.
 
@@ -64,11 +64,12 @@
                 Cette scène accueille les plus grandes têtes d'affiche et propose les sets électro les plus puissants du
                 festival.</p>
         </section>
-        <section>
-            <h1>LES SCÈNES DE LUMIMIX</h1>
-            <h2>Scène Principale - L'Horizon Lumineux</h2>
-            <img src="/assets/img/scenedefestivaldj21.avif" alt="scene du concert Secondaire" loading="lazy"></img>
-            <h3>Localisation : Dans les bois, au cœur de la presqu'île
+        <section class="scenes__section scenes__section--secondary">
+            <h1 class="scenes__title">LES SCÈNES DE LUMIMIX</h1>
+            <h2 class="scenes__subtitle">Scène Principale - L'Horizon Lumineux</h2>
+            <img class="scenes__image" src="/assets/img/scenedefestivaldj21.avif" alt="scene du concert Secondaire"
+                loading="lazy"></img>
+            <h3 class="scenes__meta">Localisation : Dans les bois, au cœur de la presqu'île
                 Capacité : 5 000 personnes</h3>
             <p>Nichée dans un écrin de verdure, La Clairière Sonore offre une atmosphère intimiste et immersive.
 
@@ -82,12 +83,12 @@
 
                 Un espace parfait pour se poser, profiter de la musique et découvrir des univers artistiques variés.</p>
         </section>
-        <div>
-            <div>
-                <button><a href="/programme.html">programme complet</a></button>
+        <div class="scenes__actions">
+            <div class="scenes__action">
+                <button class="btn"><a href="/programme.html">programme complet</a></button>
             </div>
-            <div>
-                <button><a href="/artistes.html">Autres Artistes</a></button>
+            <div class="scenes__action">
+                <button class="btn btn--ghost"><a href="/artistes.html">Autres Artistes</a></button>
             </div>
         </div>
     </main>
@@ -107,18 +108,17 @@
                                     Festival</a></li>
                             <li class="footer__nav-item"><a class="footer__nav-link"
                                     href="/programme.html">Programme</a></li>
-                            <li class="footer__nav-item"><a class="footer__nav-link"
-                                    href="/artistes.html">Artistes</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/artistes.html">Artistes</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer__nav-column">
                         <ul class="footer__nav-list">
-                            <li class="footer__nav-item"><a class="footer__nav-link"
-                                    href="/scenes.html">Scènes</a></li>
-                            <li class="footer__nav-item"><a class="footer__nav-link"
-                                    href="/infos_pratiques.html">Infos pratiques</a></li>
-                            <li class="footer__nav-item"><a class="footer__nav-link"
-                                    href="/contact.html">Contact</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/scenes.html">Scènes</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/infos_pratiques.html">Infos
+                                    pratiques</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="/contact.html">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -160,6 +160,7 @@
                 width="385px" height="44px"
                 alt="Logos des partenaires Pass Culture, Thomann, Redbull, L'Est Républicain et Pioneer DJ"
                 loading="lazy"> </div>
-    </footer></body>
+    </footer>
+</body>
 
 </html>

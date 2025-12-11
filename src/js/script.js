@@ -82,4 +82,23 @@ document.addEventListener('DOMContentLoaded', () => {
             showSlide(current);
         });
     }
+
+    // Programme accordions
+    const accordionHeaders = document.querySelectorAll('.programme__accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const isExpanded = header.getAttribute('aria-expanded') === 'true';
+
+            // Fermer tous les autres accordéons
+            accordionHeaders.forEach(otherHeader => {
+                if (otherHeader !== header) {
+                    otherHeader.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Basculer l'état du courant
+            header.setAttribute('aria-expanded', String(!isExpanded));
+        });
+    });
 });
