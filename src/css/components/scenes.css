@@ -45,9 +45,9 @@
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     margin: 0 auto var(--space-3xl);
-    max-width: 1100px;
+    max-width: 68.75rem;
 }
 
 .scenes__text {
@@ -67,7 +67,7 @@
 }
 
 .scenes__action .btn {
-    padding: 14px 28px;
+    padding: 0.875rem 1.75rem;
 }
 
 .scenes__action .btn a {

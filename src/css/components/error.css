@@ -1,7 +1,7 @@
 /* 404 Error Page Styles */
 
 .error {
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 0 auto;
     padding: var(--space-6xl) var(--space-3xl);
     text-align: center;
@@ -36,7 +36,7 @@
 
 .error__text {
     font-family: var(--headers-1-2-et-3) !important;
-    max-width: 600px;
+    max-width: 37.5rem;
     line-height: 1.6;
     margin: 0;
     text-align: left !important;
@@ -53,7 +53,7 @@
 }
 
 .error__illustration {
-    max-width: 150px !important;
+    max-width: 9.375rem !important;
     width: 100% !important;
     height: auto !important;
 }
@@ -61,7 +61,7 @@
 .error__button {
     text-decoration: none;
     padding: var(--space-2xl) var(--space-4xl);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background: var(--heading-gradient);
     color: #fff;
     text-transform: uppercase;
@@ -76,16 +76,16 @@
 }
 
 /* Responsive */
-@media (max-width: 420px) {
+@media (max-width: 26.25rem) {
     .error {
         padding: var(--space-5xl) var(--space-2xl);
     }
 
     .error__code {
-        font-size: 100px;
+        font-size: 6.25rem;
     }
 
     .error__illustration {
-        max-width: 200px;
+        max-width: 12.5rem;
     }
 }

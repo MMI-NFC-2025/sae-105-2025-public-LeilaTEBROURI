@@ -31,7 +31,7 @@
     width: 100%;
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     object-fit: cover;
     display: block;
     margin: 0 auto;
@@ -43,8 +43,8 @@
     padding: 0;
     margin: 0;
     background-color: #f5e8d4;
-    border: 3px solid #000;
-    border-radius: 30px;
+    border: 0.1875rem solid #000;
+    border-radius: 1.875rem;
     padding: var(--space-4xl) var(--space-3xl);
     display: flex;
     flex-direction: column;

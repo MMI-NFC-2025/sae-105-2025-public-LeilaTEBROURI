@@ -28,8 +28,8 @@
 }
 
 .quick-access__icon {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     object-fit: contain;
 }
 
@@ -62,18 +62,18 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-base);
-    padding: 14px 22px;
+    padding: 0.875rem 1.375rem;
     border: none;
-    border-radius: 16px;
+    border-radius: 1rem;
     background: linear-gradient(90deg, #7d2fa0 0%, #f8855c 100%);
     color: white;
     text-transform: uppercase;
     font-family: var(--headers-1-2-et-3);
     font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
+    letter-spacing: 0.03125rem;
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.18);
     transition: background 0.2s ease, color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
 }
 
@@ -86,7 +86,7 @@
 }
 
 .btn:active {
-    transform: translateY(1px);
+    transform: translateY(0.0625rem);
 }
 
 .btn:hover,

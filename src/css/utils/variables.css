@@ -18,12 +18,12 @@
     --sans: Inter;
 
     /* typographie size */
-    ----text-s--: 14px;
-    ----text-m--: 20px;
-    ----xl-header--: 20px;
-    ----2xl-header--: 25px;
-    ----3xl-header--: 35px;
-    ----err-404--: 150px;
+    ----text-s--: 0.875rem;
+    ----text-m--: 1.25rem;
+    ----xl-header--: 1.25rem;
+    ----2xl-header--: 1.5625rem;
+    ----3xl-header--: 2.1875rem;
+    ----err-404--: 9.375rem;
 
     /* Espaces */
     --space-sm: 0.125rem;

@@ -1,7 +1,7 @@
 /* Contact Page Styles */
 
 .contact {
-    max-width: 1100px;
+    max-width: 68.75rem;
     margin: 0 auto;
     padding: var(--space-6xl) var(--space-3xl);
 }
@@ -104,12 +104,12 @@
     grid-template-columns: 1fr 1fr;
     gap: var(--space-2xl);
     background: var(----beige-background--);
-    border: 3px solid #000;
-    border-radius: 28px;
+    border: 0.1875rem solid #000;
+    border-radius: 1.75rem;
     padding: var(--space-4xl) var(--space-3xl);
     overflow: hidden;
     width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
     box-sizing: border-box;
     position: relative;
@@ -123,7 +123,7 @@
 .contact__section--form::before {
     content: "";
     position: absolute;
-    inset: -40px -60px -60px -60px;
+    inset: -2.5rem -3.75rem -3.75rem -3.75rem;
     /* extend around the form area */
     background: url('/assets/img/backgroundnuages.avif') center / cover no-repeat;
     opacity: 0.35;
@@ -153,8 +153,8 @@
 .contact-form__input,
 .contact-form__textarea {
     padding: var(--space-xl);
-    border-radius: 18px;
-    border: 2px solid #000;
+    border-radius: 1.125rem;
+    border: 0.125rem solid #000;
     background: #fff;
 }
 
@@ -162,7 +162,7 @@
     grid-column: 1 / -1;
     justify-self: end;
     padding: var(--space-2xl) var(--space-4xl);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background: var(--heading-gradient);
     color: #fff;
     text-transform: uppercase;
@@ -197,7 +197,7 @@
 .contact__section--help .btn {
     text-decoration: none;
     padding: var(--space-2xl) var(--space-4xl);
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background: var(--heading-gradient);
     color: #fff;
     text-transform: uppercase;
@@ -213,20 +213,20 @@
 /* Responsive */
 @media (min-width: 768px) {
     .contact__row {
-        grid-template-columns: 220px 1fr;
+        grid-template-columns: 13.75rem 1fr;
         align-items: baseline;
     }
 }
 
 /* iPhone 15 and mobile optimization (390px) */
-@media (max-width: 420px) {
+@media (max-width: 26.25rem) {
     .contact {
         padding: var(--space-5xl) var(--space-2xl);
     }
 
     .contact-form {
         gap: var(--space-xl);
-        border-radius: 22px;
+        border-radius: 1.375rem;
         padding: var(--space-3xl) var(--space-2xl);
     }
 
@@ -237,11 +237,11 @@
     .contact-form__input,
     .contact-form__textarea {
         padding: var(--space-m);
-        border-radius: 14px;
+        border-radius: 0.875rem;
     }
 
     .contact-form__submit {
         padding: var(--space-xl) var(--space-3xl);
-        border-radius: 20px;
+        border-radius: 1.25rem;
     }
 }

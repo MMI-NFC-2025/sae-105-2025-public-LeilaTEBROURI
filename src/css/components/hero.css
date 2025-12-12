@@ -1,6 +1,6 @@
 .hero {
     background: url(/assets/icons/nuage-top-drones.avif), url(/assets/icons/nuage-bottom-drones.avif), linear-gradient(180deg, var(----orange-degrade--), var(----magenta-degrade--), var(----violet-degrade--));
-    height: 846px;
+    height: 52.875rem;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -13,18 +13,18 @@
 }
 
 .header__logo-secondary {
-    width: 250px;
+    width: 15.625rem;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .hero>h1 {
     color: white !important;
     text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
+        -0.0625rem -0.0625rem 0 black,
+        0.0625rem -0.0625rem 0 black,
+        -0.0625rem 0.0625rem 0 black,
+        0.0625rem 0.0625rem 0 black;
     margin: 0;
     background: none !important;
     -webkit-background-clip: unset !important;

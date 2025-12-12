@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     background-color: var(----beige-background--);
     position: fixed;
     top: 0;
@@ -20,8 +20,8 @@
 .header__logo {
     position: relative;
     z-index: 1001;
-    width: 70px !important;
-    height: 72px !important;
+    width: 4.375rem !important;
+    height: 4.5rem !important;
     display: block;
 }
 
@@ -37,8 +37,8 @@ body:not(.page) .header.is-visible {
 /* Menu button stays visible and functional always */
 .menu-btn {
     position: fixed;
-    top: 2px;
-    right: 20px;
+    top: 0.125rem;
+    right: 1.25rem;
     z-index: 1001;
     opacity: 1;
     visibility: visible;

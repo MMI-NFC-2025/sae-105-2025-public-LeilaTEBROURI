@@ -3,14 +3,14 @@
     appearance: none;
     background: transparent;
     border: 0;
-    padding: 8px;
-    width: 48px;
-    height: 48px;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 0.375rem;
     cursor: pointer;
     position: relative;
     z-index: 1001;
@@ -19,20 +19,20 @@
 .menu-btn__bar {
     position: relative;
     display: block;
-    width: 40px;
-    height: 3px;
+    width: 2.5rem;
+    height: 0.1875rem;
     background: var(--dark);
-    border-radius: 2px;
+    border-radius: 0.125rem;
     transition: transform 200ms ease, opacity 200ms ease;
     transform-origin: center;
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar--top {
-    transform: translateY(4.6px) rotate(45deg);
+    transform: translateY(0.2875rem) rotate(45deg);
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar--bottom {
-    transform: translateY(-4.6px) rotate(-45deg);
+    transform: translateY(-0.2875rem) rotate(-45deg);
 }
 
 .nav {
@@ -63,7 +63,7 @@
 
 .nav.nav--closing .nav__item {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-1.25rem);
 }
 
 .nav.nav--closing .nav__item:nth-child(1) {
@@ -95,13 +95,13 @@
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 16px;
+    gap: 1rem;
     text-align: center;
 }
 
 .nav__item {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-1.25rem);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
@@ -137,7 +137,7 @@
 
 .nav__link {
     font-family: var(--headers-1-2-et-3);
-    font-size: 35px;
+    font-size: 2.1875rem;
     color: var(--dark);
     text-decoration: none;
 }

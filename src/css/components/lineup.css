@@ -46,7 +46,7 @@
 .artist-card__img {
     width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     object-fit: cover;
 }
 
@@ -108,7 +108,7 @@
 
     .lineup__grid {
         padding: var(--space-5xl);
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
         gap: var(--space-5xl);
     }
 
@@ -119,7 +119,7 @@
 
     .artist-card__img {
         width: 100%;
-        height: 400px;
+        height: 25rem;
         object-fit: cover;
     }
 
