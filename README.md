@@ -6,7 +6,7 @@
 - NOM : TEBROURI
 - PRÉNOM : Leila
 - GROUPE : C2
-- URL du site :
+- URL du site : https://festivallumimix.tebrouri.fr/
 - URL FIGMA : https://www.figma.com/design/VAoBt5QoLvaCDh0WLpBqkG/SAE_103_Projet-8_Leila-Tebrouri_16-10-2025?node-id=55-2&t=ffKrrbmTYV4n6o6q-1
 
 ## Sujet
