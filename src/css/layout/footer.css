@@ -2,6 +2,32 @@
     text-align: left !important;
 }
 
+.footer h1,
+.footer h2,
+.footer h3 {
+    width: auto;
+    line-height: 1.2;
+}
+
+.footer h1 {
+    font-size: var(----text-m--);
+}
+
+.footer__baseline {
+    font-size: var(----3xl-header--) !important;
+    line-height: 1.1;
+}
+
+.footer__year-location {
+    font-size: var(----2xl-header--) !important;
+    line-height: 1.1;
+}
+
+.footer h2,
+.footer h3 {
+    font-size: var(----text-s--);
+}
+
 .footer ul,
 .footer li {
     list-style: none;
@@ -39,7 +65,6 @@
     margin: 0;
     padding: 0;
 }
-}
 
 .footer__social-legal-flex {
     display: flex;
@@ -55,7 +80,7 @@
 }
 
 .footer__nav-link {
-    font-size: var(----xl-header--);
+    font-size: var(----text-s--);
 }
 
 .footer h3,
@@ -81,6 +106,7 @@
     background-clip: unset !important;
     -webkit-text-fill-color: white !important;
     color: white !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .footer h1 {
@@ -89,12 +115,12 @@
 }
 
 .footer__logo {
-    margin-bottom: 50px;
+    margin-bottom: 24px;
 }
 
 .footer {
-    background: url(/assets/icons/nuage-top.png), url(/assets/icons/nuage-bottom.png), linear-gradient(180deg, var(----orange-degrade--), var(----magenta-degrade--), var(----violet-degrade--));
-    height: 846px;
+    background: url(/assets/icons/nuage-top-drones.avif), url(/assets/icons/nuage-bottom-drones.avif), linear-gradient(180deg, var(----orange-degrade--), var(----magenta-degrade--), var(----violet-degrade--));
+    height: 820px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -102,10 +128,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
-    padding: 120px var(--space-2xl) var(--space-4xl);
+    padding: 96px var(--space-2xl) var(--space-4xl);
     color: white;
     font-size: var(----text-s--);
-    gap: 48px;
+    gap: 40px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center, bottom center;
@@ -115,7 +141,7 @@
 .footer__grid,
 .footer__section,
 .footer__partners {
-    margin-bottom: 40px;
+    margin-bottom: 28px;
 }
 
 
@@ -138,6 +164,12 @@
     position: relative;
     z-index: 10;
     margin-left: 6px;
+}
+
+.footer__partners-img {
+    width: 440px !important;
+    max-width: 100%;
+    height: auto !important;
 }
 
 .footer__content {

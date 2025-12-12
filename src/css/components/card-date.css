@@ -43,14 +43,13 @@
     margin-top: var(--space-5xl);
 }
 
-.date__title {
-    margin: 0;
-    font-size: var(----3xl-header--);
-}
-
+.date__title,
 .date__subtitle {
     margin: 0;
-    font-size: var(----text-s--);
+}
+
+.date__title {
+    font-size: var(----3xl-header--);
 }
 
 .date__subtitle:first-of-type {

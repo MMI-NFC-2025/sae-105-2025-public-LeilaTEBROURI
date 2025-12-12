@@ -17,9 +17,6 @@
 .error__content h2 {
     font-family: var(--headers-1-2-et-3) !important;
     font-size: var(----xl-header--) !important;
-    color: var(--dark) !important;
-    background-image: none !important;
-    -webkit-text-fill-color: unset !important;
     text-align: left !important;
 }
 
@@ -33,18 +30,12 @@
 
 .error__title {
     font-family: var(--headers-1-2-et-3) !important;
-    color: var(--dark) !important;
-    background-image: none !important;
-    -webkit-text-fill-color: unset !important;
     text-transform: uppercase;
     margin: 0;
 }
 
 .error__text {
     font-family: var(--headers-1-2-et-3) !important;
-    color: var(--dark) !important;
-    background-image: none !important;
-    -webkit-text-fill-color: unset !important;
     max-width: 600px;
     line-height: 1.6;
     margin: 0;

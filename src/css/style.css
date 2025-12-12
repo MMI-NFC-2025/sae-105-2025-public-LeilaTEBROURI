@@ -3,6 +3,7 @@
 
 /* Utils */
 @import "utils/variables.css";
+@import "utils/utilities.css";
 
 /* Base */
 @import "base/main.css";

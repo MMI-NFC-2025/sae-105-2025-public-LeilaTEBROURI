@@ -1,0 +1,17 @@
+/* Utility Classes */
+
+/* Force dark text color and remove gradient - Applied globally to specific sections */
+.date__title,
+.date__subtitle,
+.error__content h2 {
+    color: var(--dark) !important;
+    background-image: none !important;
+    -webkit-text-fill-color: unset !important;
+}
+
+/* Utility class for one-off usage */
+.text-dark {
+    color: var(--dark) !important;
+    background-image: none !important;
+    -webkit-text-fill-color: unset !important;
+}

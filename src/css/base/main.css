@@ -56,6 +56,18 @@ h3 {
     width: max-content;
 }
 
+h1 {
+    font-size: var(----3xl-header--);
+}
+
+h2 {
+    font-size: var(----2xl-header--);
+}
+
+h3 {
+    font-size: var(----xl-header--);
+}
+
 button,
 input,
 select,
